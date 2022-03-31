@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ID Card Main</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(./IDcard_images/pic2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
+        }
+
+        @font-face {
+            font-family: NanumBarunpen;
+            src: url("./NanumBarunpenB.ttf");
+        }
+
+        #profile_box {
+            width: 600px;
+            height: 535px;
+            background: rgb(133, 70, 70);
+            padding: 5px 5px 5px 5px;
+            border: solid 1px #aaaaaa;
+            border-radius: 10px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            margin-left: -300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #intro_box {
+            flex: 1;
+            background-color: rgb(43, 28, 28);
+            color: white;
+            padding: 5px 5px 0px 5px;
+            border: solid 1px black;
+            border-radius: 15px;
+        }
+
+        #career_box {
+            height: 12%;
+            color: black;
+            background-color: cornsilk;
+            margin: 5px 0px 0px 0px;
+            padding: 0px 15% 0px 15%;
+            border: solid 1px #aaaaaa;
+            border-radius: 15px;
+            display: table;
+            text-align: center;
+        }
+
+        #motto_box {
+            height: 40%;
+            background-color: #aaaaaa;
+            color: white;
+            margin: 5px 0px 0px 0px;
+            padding: 5px 5px 0px 5px;
+            border: solid 1px #aaaaaa;
+            border-radius: 15px;
+        }
+
+        .title {
+            width: 110px;
+            height: 23px;
+            font-size: 18px;
+            text-align: center;
+            margin: 0 auto 2px auto;
+            padding: auto 0px auto 0px;
+            border-left: solid 5px rgb(137, 70, 70);
+            border-right: solid 5px rgb(137, 70, 70);
+        }
+
+        #intro_div {
+            float: left;
+        }
+
+        #intro_div ul {
+            list-style-type: none;
+        }
+
+        .intro_li {
+            font-family: NanumBarunpen;
+        }
+
+
+
+        .IB_1 {
+            width: 203px;
+            height: 203px;
+            border: solid 2px brown;
+        }
+
+        .IB_2 {
+            width: 367px;
+            height: 200px;
+            margin-left: 5px;
+            padding-top: 5%;
+            padding-left: 5%;
+            line-height: 30px;
+        }
+
+
+        /*  */
+        .career_inbox {
+            display: table-cell;
+            text-align: center;
+            /* vertical-align: middle; */
+            /* border: solid 2px black; */
+        }
+
+        .careers {
+            display: inline-block;
+            /* border: solid 2px black; */
+        }
+
+        .career1,
+        .career3 {
+            width: 65px;
+            font-size: 24px;
+            text-align: center;
+            float: left;
+            padding-top: 20%;
+        }
+
+        /* .career2 {
+            width: 110px;
+            font-size: 25px;
+            text-align: center;
+            float: left;
+        } */
+
+        /*  */
+
+        .mottos {
+            width: auto;
+            margin: 15px 0 0 0;
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+
+            color: black;
+            text-shadow: 2px 2px rgb(89, 64, 150);
+            font-style: oblique;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <img src="pic2.jpg" width="100%">
+
+
+    <div id="profile_box">
+        <div id="intro_box">
+            <h1 class="title">자기소개</h1>
+            <div id="intro_div" class="IB_1">
+                <img src="./IDcard_images/dsBuffer2.png" alt="프로필 사진">
+            </div>
+            <div id="intro_div" class="IB_2">
+                <ul>
+                    <li class="intro_li">이름 : 조계훈</li>
+                    <li class="intro_li">출생 : 2000년 4월 11일</li>
+                    <li class="intro_li">학과 / 학번 : 의생명과학과 / 20194138</li>
+                    <li>Phone : 010-9015-1866</li>
+                    <li class="intro_li">거주지 : 서울시 은평구</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ddddddddddddddddddddddddd -->
+        <div id="career_box">
+            <div class="career_inbox">
+                <div class="careers">
+                    <div class="career1"><a href="./IDcard2-1.html" target="_parent">Career</a></div>
+                </div>
+            </div>
+            <!-- <div class="career_inbox">
+                <div class="careers">
+                    <div class="career2">
+                        <p>My Detail</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="career_inbox">
+                <div class="careers">
+                    <div class="career3"><a href="./IDcard2-2.html" target="_parent">Favorites</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- sdddddddddddddddddddddddd -->
+        <div id="motto_box">
+            <h1 class="title">Motto</h1>
+            <div class="mottos">
+                Think harder<br>
+                <span class="emphasize_font">And</span>
+                Go down deeper
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

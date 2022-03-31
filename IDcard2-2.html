@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ID Card Sub1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: NanumSquareR;
+            src: url("./NanumSquareRoundR.ttf");
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #Sub1_box {
+            width: 800px;
+            height: 500px;
+            background: rgb(133, 70, 70);
+            padding: 5px 5px 5px 5px;
+            border: solid 1px #aaaaaa;
+            border-radius: 10px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            margin-left: -400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .c1 {
+            width: 100%;
+            float: left;
+            padding: 15px;
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgb(43, 28, 28);
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        header div {
+            float: left;
+        }
+
+        .c1_ul {
+            float: right;
+            margin: 2px auto;
+        }
+
+        .c1_ul a {
+            color: white;
+        }
+
+
+        /* dddddddddddd */
+
+
+        .main input[type=radio] {
+            display: none;
+        }
+
+        #tab-1:checked~.tab label:nth-child(1),
+        #tab-2:checked~.tab label:nth-child(2),
+        #tab-3:checked~.tab label:nth-child(3) {
+            background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: none;
+        }
+
+        .content>div {
+            display: none;
+        }
+
+        #tab-1:checked~.content div:nth-child(1),
+        #tab-2:checked~.content div:nth-child(2),
+        #tab-3:checked~.content div:nth-child(3) {
+            display: block;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background-color: cornsilk;
+            border-radius: 10px;
+        }
+
+        .tab {
+            width: 150px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .tab label {
+            font-size: 12px;
+            cursor: pointer;
+            float: left;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            padding: 15px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .content {
+            width: 638px;
+            float: left;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .content-dis {
+            font-family: NanumSquareR;
+        }
+
+
+        .content>div {
+            width: 100%;
+            padding: 15px;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        table,
+        td,
+        th {
+            border: solid 1px black;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .musicions {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        .musicions td {
+            padding-left: 25px;
+            text-align: center;
+            border: 0px;
+        }
+
+        .games {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            margin-top: 65px;
+        }
+
+        .games td {
+            padding-left: 25px;
+            text-align: center;
+            border: 0px;
+        }
+
+        #table_x_title {
+            height: 30px;
+            background-color: rgba(102, 55, 55, 0.521);
+        }
+
+        .test {
+            width: 600px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./IDcard_images/pic2.jpg" width="100%">
+
+    <div id="Sub1_box">
+        <header class="c1">
+            <div>
+                <h1>Favorite Introduction</h1>
+            </div>
+            <div class="c1_ul">
+                <ul>
+                    <li><a href="./IDcard2.html" target="_parent"> → Main</a></li>
+                    <li><a href="./IDcard2-1.html" target="_parent"> → Career</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <div class="main">
+            <input type="radio" id="tab-1" name="show" checked />
+            <input type="radio" id="tab-2" name="show" />
+            <input type="radio" id="tab-3" name="show" />
+
+            <div class="tab">
+                <label for="tab-1">Movie</label>
+                <label for="tab-2">Music</label>
+                <label for="tab-3">Game</label>
+            </div>
+            <div class="content">
+                <div class="content-dis">
+                    <table>
+                        <tr id="table_x_title">
+                            <th><strong>공백</strong></th>
+                            <th class="table_title"><strong>액션</strong></th>
+                            <th class="table_title"><strong>코미디</strong></th>
+                            <th class="table_title"><strong>기타</strong></th>
+                        </tr>
+                        <tr>
+                            <td id="table_y_title">영화 제목</td>
+                            <td>
+                                <ul>
+                                    <li>분노의 질주</li>
+                                    <li>트랜스포터</li>
+                                    <li>해리포터</li>
+                                    <li>트랜스포머</li>
+                                    <li>본 시리즈</li>
+                                    <li>레지던트 이블 시리즈</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>가문의 영광</li>
+                                    <li>Vacation</li>
+                                    <li>킬러의 보디가드</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>바람계곡의 나우시카</li>
+                                    <li>인턴</li>
+                                    <li>나니아 연대기</li>
+                                    <li></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="content-dis">
+                    <table class="musicions">
+                        <tr>
+                            <td>
+                                <img src="./IDcard_images/Eminem.jpg" width="150px" alt="eminem"
+                                    style="display: block;">Eminem
+                            </td>
+                            <td>
+                                <img src="./IDcard_images/bcg.jpg" width="150px" alt="bcg" style="display: block;">배치기
+                            </td>
+                            <td>
+                                <img src="./IDcard_images/linkinpark.jpg" width="150px" alt="LkP"
+                                    style="display: block;">LinkinPark
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./IDcard_images/NF_photo_2016.jpg" width="150px" alt="NF"
+                                    style="display: block;">NF
+                            </td>
+                            <td>
+                                <img src="./IDcard_images/pk.jpg" width="150px" alt="PK" style="display: block;">폴킴
+                            </td>
+                            <td>
+                                <img src="./IDcard_images/버즈_-_Buzz_Effect.jpg" width="150px" alt="buzz"
+                                    style="display: block;">Buzz
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="content-dis">
+                    <table class="games">
+                        <tr>
+                            <td>
+                                <img src="./IDcard_images/LoL.jpg" width="200px" alt="LOL"
+                                    style="display: block; text-align: center;">리그 오브
+                                레전드
+                            </td>
+                            <td>
+                                <img src="./IDcard_images/kartrider.png" width="200px" alt="KartRider"
+                                    style="display: block;">카트라이더
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
